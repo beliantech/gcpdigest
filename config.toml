@@ -1,3 +1,6 @@
 baseURL = "https://gcpdigest.com/"
 languageCode = "en-us"
 title = "GCP Digest"
+
+[Params]
+  description = "Handcrafted biweekly newsletter of noteworthy updates in Google Cloud. Not a bunch of links."
