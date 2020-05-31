@@ -11,7 +11,7 @@
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{- end }}
-  <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="shortcut icon" href="{{ "favicon.png" | relURL }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.2.0/dist/tailwind.min.css">
   <style>
     .bg-theme {

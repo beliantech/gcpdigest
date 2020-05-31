@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "joncloudgeek"
+  },
+  "targets": {
+    "joncloudgeek": {
+      "hosting": {
+        "site": [
+          "gcpdigest"
+        ]
+      }
+    }
   }
 }
