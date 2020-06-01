@@ -8,6 +8,7 @@
   <meta name="twitter:card"  content="summary"></meta>
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta property="og:title"  content="{{ .Title }}" />
+  <meta property="og:url"  content="{{ .Site.BaseURL }}" />
   {{ with .Site.Params.description }}
   <meta name="twitter:description" content="{{ . }}" />
   <meta name="description" content="{{ . }}">
