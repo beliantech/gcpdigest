@@ -3,4 +3,4 @@ languageCode = "en-us"
 title = "GCP Digest"
 
 [Params]
-  description = "Handcrafted biweekly newsletter of highlights in Google Cloud. Not a bunch of links."
+  description = "Handcrafted biweekly newsletter of highlights and news in Google Cloud. Not a bunch of links."
