@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
-  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:card"  content="summary"></meta>
   <meta name="twitter:title" content="{{ .Title }}" />
+  <meta property="og:title"  content="{{ .Title }}" />
   {{ with .Site.Params.description }}
   <meta name="twitter:description" content="{{ . }}" />
   <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}" />
   {{ end }}
+  <meta property="og:image" content="https://gcpdigest.com/meta.png" />
   <meta name="twitter:image" content="https://gcpdigest.com/twitter-meta-small.png" />
 
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
