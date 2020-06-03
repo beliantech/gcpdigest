@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <!-- Override Tailwind override -->
+  <style>
+    ul {
+      display: block !important;
+      list-style-type: disc !important;
+      margin-block-start: 1em !important;
+      margin-block-end: 1em !important;
+      margin-inline-start: 0px !important;
+      margin-inline-end: 0px !important;
+      padding-inline-start: 40px !important;
+    }
+  </style>
+  <div class="text-center mx-4">
+    <h1 class="inline-block text-3xl mt-8">{{ .Title }}</h1>
+    <div class="mt-2"><a class="text-blue-600 text-sm" href="/">Back to homepage</a></div>
+  </div>
+  {{ .Content }}
+  {{ partial "subscribe.html" . }}
+{{ end }}
