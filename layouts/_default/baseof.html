@@ -9,10 +9,14 @@
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta property="og:title"  content="{{ .Title }}" />
   <meta property="og:url"  content="{{ .Site.BaseURL }}" />
-  {{ with .Site.Params.description }}
+  {{ with .Description }}
   <meta name="twitter:description" content="{{ . }}" />
   <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}" />
+  {{ else }}
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
   {{ end }}
   <meta property="og:image" content="https://gcpdigest.com/meta.png" />
   <meta name="twitter:image" content="https://gcpdigest.com/twitter-meta-small.png" />
