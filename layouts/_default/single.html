@@ -12,7 +12,8 @@
     }
   </style>
   <div class="text-center mx-4">
-    <h1 class="inline-block text-3xl mt-8">{{ .Title }}</h1>
+    <h1 class="inline-block text-3xl mt-8">GCP Digest {{ .Title }}</h1>
+    <div class="mt-1">{{ .Date.Format "2 January 2006" }}</div>
     <div class="mt-2"><a class="text-blue-600 text-sm" href="/">Back to homepage</a></div>
   </div>
   {{ .Content }}
